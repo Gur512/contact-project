@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+:root {
+  --app-dark-background-color: #1d1c1c;
+  --app-white-text-color: #fff;
+  --app-gary-background-color: #2c2b2b;
+  --app-orange-color: #f90;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--app-dark-background-color);
+  color: var(--app-white-text-color);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+.container {
+  width: min(100% - 30px, 1200px);
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.contant {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 160px;
+  padding: 10px 20px;
+  background-color: var(--app-gary-background-color);
+  border-radius: 5px;
+  color: #fff;
+  border: 0.5px solid #444;
+}
+
+input:nth-child(2) {
+  width: 160px;
+  margin-left: 1.5px;
+}
+
+input:nth-child(3) {
+  width: 220px;
+  margin-left: 1.5px;
+}
+
+.create-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #41a841;
+  color: var(--app-white-text-color);
+  cursor: pointer;
+}
+
+.message {
+  color: #f33;
+  font-size: 14px;
+  margin-top: 5px;  
+  margin-bottom: 5px;  
+  display: block;  
+  text-align: left;
+}
+
+
+.shape-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 660px; 
+  height: auto;
+  min-height: 400px;
+  align-content: start;
+  overflow: auto;
+}
+
+.contact-card {
+  background-color: var(--app-gary-background-color);
+  border: 1px solid #444;
+  width: 290px;
+  height: 100px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  overflow: hidden;
+  text-align: left;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-card:hover {
+  border-color: #f33;
+}
+
+.contact-card div {
+  margin: 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.total-div {
+  font-size: 16px;
+  color: var(--app-white-text-color);
+  text-align: center;
+  background-color: var(--app-orange-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: fixed;
+  inset: auto 40px 40px auto;
+  border-radius: 5px;
+  display: none;
+  background-color: #16db62;
+}
+
