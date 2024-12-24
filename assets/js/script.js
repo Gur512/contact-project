@@ -151,3 +151,4 @@ function listContacts() {
         shapeGrid.appendChild(contactDiv);
     });
 }
+
